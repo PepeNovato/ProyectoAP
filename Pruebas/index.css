@@ -1,0 +1,23 @@
+div ul li.nav-item a img{
+    height: 1.5em;
+} 
+div.row{
+    background-color: beige;
+}
+
+#Hero{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190830/pngtree-80s-retro-style-sci-fi-background-image_308368.jpg)  ;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0000004d;
+    background-blend-mode: darken;
+    height: 70vh;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(150,80,150);
+    box-sizing: border-box;
+}
