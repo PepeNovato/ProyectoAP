@@ -1,11 +1,44 @@
-div ul li.nav-item a img{
-    height: 1.5em;
-} 
-div.row{
-    background-color: beige;
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+/*-----------------------------------animaciones----------------------------*/
+
+nav{
+    background-color: rgb(150,80,150);
+    box-sizing: border-box;
 }
 
-#Hero{
+div ul li.nav-item a img{
+    height: 2em;
+    margin: auto;
+} 
+
+div ul li.nav-item a i, div ul li.nav-item a p{
+    float:left;
+}
+div ul li.nav-item a p{
+    font-size: 1.3em;
+}
+div ul li.nav-item a i{
+    font-size: 2em;
+}
+/*-----------------------------------Barra de navegación---------------------------------------*/
+
+div.row{
+    background-color: rgb(240,240,240);
+}
+
+.Hero{
     background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190830/pngtree-80s-retro-style-sci-fi-background-image_308368.jpg)  ;
     height: 40vh;
     background-size: cover;
@@ -14,10 +47,70 @@ div.row{
     background-color: #0000004d;
     background-blend-mode: darken;
     height: 70vh;
+    box-shadow: 1px 30px 50px #000000ab;
+    text-align: center;
+}
+/*-----------------------------------Fondos------------------------------------------*/
+@media (max-width:576px){
+    #Titulo{
+        color:white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #Titulo h2{
+        font-size: 19px;
+    }    
+}/*-------------------------------------version movil*/
+@media (min-width:576px){
+    #Titulo{
+        color:white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+/*--------------------------------------pantalla grande*/
+#Titulo h2{
+    font-size: calc(1.325rem + .9vw);
+}
+}
+
+/*-----------------------------------Medias del titulo-----------------------------------*/
+p.border{
+    border-radius: 4px;
+    padding: 1em 1em;
+}/*temporal hasta encontrar mejor metodo, solo sirve para redondear bordes*/
+
+div p{
+    text-align: justify;
+}
+.datos_personales{
     text-align: center;
 }
 
-nav{
-    background-color: rgb(150,80,150);
-    box-sizing: border-box;
+#Titulo h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-right: .15em solid #18BDEC;
+    animation: typing 4s steps(32) 1s 1 normal both, blink 1s steps(1) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+/*-----------------------------------Datos personales y acerca de -------------------------*/
+
+#FotoPerfil{
+    position: relative;
+    top: -50%;
+    width: 50vh;
+    height: 50vh;
+    left: 25%;
+}
+@media only screen and (max-width:540px){
+    #FotoPerfil{
+        left: 10%;
+        width: 300px;
+        height: 300px;
+    }
 }

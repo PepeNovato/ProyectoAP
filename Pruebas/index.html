@@ -5,91 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil Rodrigo</title>
-    <link rel="stylesheet" href="/pruebasBoot/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!--CSS-->
+    <link rel="stylesheet" href="/Pruebas/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.theme.min.css" rel="stylesheet">
+<!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://use.fontawesome.com/463aacdde3.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light border-3 border-bottom border-dark">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light border-3 border-bottom border-dark"> 
         <div class="container-fluid">
                     <a href="#" class="navbar-brand">
-                        <img class="d-none d-sm-block" src="/Imagenes/APLogo20x20negro.png" alt="Logo" height="75em">
-                        <img class="d-block d-sm-none" src="/Imagenes/APLogo20x20negro.png" alt="Logo" height="50em">
+                        <img class="d-none d-sm-block" src="/Imagenes/APLogo20x20negro.png" alt="Logo" height="75em"><!--se oculta en sm-->
+                        <img class="d-block d-sm-none" src="/Imagenes/APLogo20x20negro.png" alt="Logo" height="80em"><!--se muestra en sm-->
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">    
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars" style="font-size: 2em;"></i>
                 </button>
-
                     <div id="navbarSupportedContent" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav ms-auto">
                             <li class="nav-item active">
                                 <a href="#" class="nav-link btn  btn-sm ">
-                                    <img class="img-fluid" src="/Imagenes/logosRedes/dia/instagram.png" alt="LogoI"><p class="d-block d-sm-none"> Instagram</p>
+                                    <img class="img-fluid d-none d-sm-block" src="/Imagenes/logosRedes/dia/instagram.png" alt="LogoI">
+                                    <i class="fa fa-instagram d-block d-sm-none" aria-hidden="true"></i>
+                                    <p class="d-block d-sm-none">Instagram</p>
+                                
                                 </a>
                             </li>
                             <li class="nav-item active">
                                 <a href="#" class="nav-link btn btn-sm">
-                                    <img class="img-fluid" src="/Imagenes/logosRedes/dia/facebook.png" alt="LogoF"><p class="d-block d-sm-none"> Facebook</p></a>
+                                    <img class="img-fluid d-none d-sm-block" src="/Imagenes/logosRedes/dia/facebook.png" alt="LogoF">
+                                    <i class="fa fa-facebook-official d-block d-sm-none" aria-hidden="true"></i>
+                                    <p class="d-block d-sm-none">Facebook</p>
+                                </a>
                             </li>
                             <li class="nav-item active">
                                 <a href="#" class="nav-link btn btn-sm">
-                                    <img class="img-fluid" src="/Imagenes/logosRedes/dia/github.png" alt="LogoGit"><p class="d-block d-sm-none">GitHub</p></a>
+                                    <img class="img-fluid d-none d-sm-block" src="/Imagenes/logosRedes/dia/github.png" alt="LogoGit">
+                                    <i class="fa fa-github  d-block d-sm-none" aria-hidden="true"></i>
+                                    <p class="d-block d-sm-none">GitHub</p>
+                                </a>
                             </li>
                             <li class="nav-item active">
                                 <a href="#" class="nav-link btn btn-sm">
-                                    <img class="img-fluid" src="/Imagenes/logosRedes/dia/correo-electronico.png" alt="LogoGmail" title="Redactar Correo"> <p class="d-block d-sm-none">Gmail</p></a>
+                                    <img class="img-fluid d-none d-sm-block" src="/Imagenes/logosRedes/dia/correo-electronico.png" alt="LogoGmail" title="Redactar Correo"> 
+                                    <i class="fa fa-google  d-block d-sm-none"aria-hidden="true"></i>
+                                    <p class="d-block d-sm-none">Gmail</p>
+                                </a>
                             </li>
                         </ul>
                     </div><!--redes-->    
         </div><!--container-->
     </nav>
-<!--Hero-->
+<!--Hero------------------------------------------------------------------------------------>
 <header>
-    <div class="container-fluid" id="Hero"></div>
-</header>
-<!--Foto-->
-    <div class="container">
-        <div class="row">
-            <div class="col-auto">
-                <img class="img-fluid rounded-circle border border-dark border-3" src="/Imagenes/fotoPerfil.jpg" alt="Foto_Perfil.jpg"
-                 style="width: 168px; height: 168px;">
-            </div>
+    <div class="container-fluid Hero">
+        <div class="d-inline-flex p-2" id="Titulo">
+            <h2>Bienvenido al Portfolio Personal!</h2>
         </div>
     </div>
+</header>
+<!--Foto------------------------------------------------------------------------------------>  
+<div class="row container-fluid">
+    <div class="col-sm-12 col-md-6">
+        <img id="FotoPerfil" class="rounded-circle border border-dark border-3" 
+        src="/Imagenes/fotoPerfil.jpg" alt="Foto_Perfil.jpg">
+    </div>
+     <div class="col-md-6 d-block d-none" style="height: 30vh ;box-sizing: border-box;background-color: transparent; ">
+    </div>
+</div>
+<!--Solo un espacio, quizas para botones de edicion-->
 <!--Datos Y acerca de-->
-    <div class="container">
-        <div class="row justify-content-start">
-            <div class="col-sm-12 col-md-4">
-                <p class="border border-dark">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quaerat corrupti est et consectetur quod, placeat ipsam ratione inventore tempore repellendus nihil necessitatibus laboriosam ab blanditiis excepturi facere eos voluptatum!
-                </p>
+    <div class="container-fluid justify-content-center">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-12 datos_personales">
+                <h3><i class="fa fa-user-circle"></i> Datos Personales:</h3>  
+                    <p class="border border-dark">
+                        Datos Personales
+                    </p>
             </div>
         <!--acerca de-->
-            <div class="col-sm-12 col-md-8">
-                <p class="border border-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo nam veniam voluptatem, nesciunt, ipsum ipsa alias earum quas officia quia iste eum reprehenderit quidem voluptatum harum ad. Maiores, commodi.</p>
+            <div class="col-sm-12 col-md-8 col-lg-12">
+            <h3><i class="fa fa-coffee"></i> Acerca De:</h3>
+                <p class="border border-dark">
+                    Acerca De:
+                </p>
             </div>
         </div>
     </div>
 <!--Experiencia-->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-
+                <h1>Experiencia:</h1>
+                <p class="border border-dark">
+                </p>
             </div>
         </div>
     </div>
 <!--Estudios-->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-
+                <h1>Estudios:</h1>
+                <p class="border border-dark">
+                </p>
             </div>
         </div>
     </div>
 <!--Habilidades-->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
+                <h1>
+                    Habilidades:
+                </h1>
+                <p class="border border-dark"></p>
 
             </div>
         </div>
